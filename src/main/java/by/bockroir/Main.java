@@ -1,12 +1,15 @@
 package by.bockroir;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
 public class Main {
     private static Logger logger = Logger.getLogger(Main.class.getName());
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+//        System.out.println(String.format( Commands.SHOW_COLUMNS.toString(), "!"));
+
         if (args.length < 5){
             System.out.println("pass args: HOST PORT DATABASE_NAME USERNAME PASSWORD");
             return;        
